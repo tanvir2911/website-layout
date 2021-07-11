@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .photo-frame {
+            position: relative;
+            width: 300px;
+            height: 370px;
+            border: 2px solid grey;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+
+        }
+
+        .photo-details {
+            position: absolute;
+            /* width: 300px; */
+            top: 0;
+            display: none;
+            /* visibility: hidden; */
+        }
+
+        .photo-frame:hover .photo-details {
+            display: block;
+            /* visibility: visible; */
+            background-color: rgba(240, 255, 240, 0.295);
+        }
+
+        .photo-details h3 {
+            background-color: darkslategray;
+            text-align: center;
+        }
+
+        .photo-details p {
+            padding: 20px;
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(2) skew(-30deg);
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Awesome photos of Lion</h1>
+    <section>
+        <h2>Lion's Album</h2>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugit pariatur totam quod odit
+                        ipsa error et delectus inventore rem harum tempora excepturi voluptatibus distinctio quae, nihil
+                        maxime natus quasi voluptates aut voluptatum tenetur corporis qui vel. A dolore quaerat unde eum
+                        hic molestiae? Modi placeat perferendis recusandae excepturi aliquam!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Velit dolore, cupiditate alias vel quibusdam amet, facilis quasi fugiat quam error vero labore
+                        veritatis veniam quod deserunt corrupti illum totam repudiandae ab! A excepturi unde cumque quos
+                        beatae tempora iusto? Aperiam officia explicabo vero. Soluta eos quae est deserunt suscipit
+                        laudantium tempora! Harum, nulla. Accusantium cum nostrum est eveniet.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Optio exercitationem porro eum hic, voluptate architecto reiciendis repellendus aliquid laborum
+                        velit aut facilis libero quae? Rerum molestiae unde necessitatibus explicabo vel beatae. Soluta
+                        repellendus accusantium modi sed deserunt autem commodi. Voluptatum non et rem, debitis quia
+                        fugiat, ipsum perspiciatis eaque reprehenderit facilis ratione iusto incidunt nulla quos iure
+                        deserunt.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>A necessitatibus aperiam ea dolorem laborum modi ducimus debitis soluta laboriosam quas maxime
+                        amet aliquid, delectus sed adipisci praesentium nesciunt? Debitis ea consequuntur deleniti
+                        eligendi suscipit provident ad facere? Beatae provident voluptate, voluptatem earum, ipsum nihil
+                        animi aliquid veritatis cumque officiis aliquam vitae voluptas. Similique placeat asperiores
+                        adipisci veniam quam?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Reiciendis aliquid asperiores autem cumque enim tempore. Fuga dolorum libero, doloribus minus
+                        blanditiis, tempore ipsum modi corrupti, eaque expedita deleniti perspiciatis a! Voluptatum
+                        cupiditate enim dolorem suscipit quisquam fuga sint molestiae libero! Quidem labore ipsa ut
+                        deserunt cumque itaque maiores dolore quo? Non, quos ullam. Nemo enim nesciunt ea minima.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Illo exercitationem assumenda recusandae nemo enim, voluptatem excepturi minus quibusdam
+                        voluptatum magnam inventore nobis blanditiis fuga nostrum voluptates laboriosam corporis
+                        suscipit. Sapiente, quaerat aspernatur assumenda fugit cum eligendi aperiam mollitia architecto
+                        perferendis incidunt pariatur obcaecati quas, laboriosam fuga, aliquam tenetur accusantium in.
+                        Aperiam labore repellat inventore, et consequuntur aliquid? Iure.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Adipisci quia sunt, repellat perferendis ut cumque inventore consectetur nostrum velit molestiae
+                        quo officiis, recusandae voluptatum? Fuga suscipit tempore blanditiis modi in harum sapiente
+                        dolore omnis, ab soluta. Corrupti sed porro placeat, ad minima nesciunt laborum fugit dolorem
+                        vel perspiciatis! Quae soluta amet excepturi a temporibus velit aliquid aspernatur corporis!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Sit eaque autem aut ratione laudantium nulla maiores. Natus non dolor est tempore commodi,
+                        corrupti aspernatur! Velit dolorem a rem, numquam quae est cumque doloribus nostrum at expedita
+                        dolore ad natus porro ut quisquam ratione non ab consectetur excepturi voluptatem quo fuga.
+                        Rerum repudiandae debitis dolores! Obcaecati quasi optio consequuntur?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Ducimus distinctio, impedit officia atque aliquam, ipsum voluptatum blanditiis consequatur magnam
+                        tempora sint sapiente. Atque cupiditate alias dolor praesentium. Doloribus beatae odio saepe
+                        voluptatum facilis corrupti temporibus ducimus, inventore expedita, quo dolore iusto labore
+                        nesciunt veniam alias consectetur? Itaque molestias ipsam iste repellendus cupiditate facilis
+                        expedita natus ullam nobis dolorem?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Cum laboriosam officia quo asperiores expedita incidunt accusamus ducimus vitae pariatur!
+                        Voluptatibus molestias nulla aspernatur accusamus id fuga et, sint deserunt temporibus dolore
+                        tempore perspiciatis sed asperiores quibusdam, voluptas nesciunt. Aut, laudantium deleniti error
+                        odio eligendi autem cupiditate qui mollitia repellendus dolorem, beatae magnam. Deserunt
+                        consequatur eius explicabo aspernatur sequi!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Fugiat sapiente eos culpa unde placeat perspiciatis dolores nostrum nemo? Quo doloremque,
+                        voluptas perspiciatis culpa rerum autem maiores, asperiores numquam, rem recusandae similique
+                        earum. Deserunt unde expedita vel dolore quisquam ad quaerat, magni quidem. Eos non odio eius
+                        vero natus libero nulla reprehenderit. Sed, quia fugit! Odit, enim voluptatem! Quae!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Nobis ipsam esse adipisci. Deleniti consequatur placeat repellendus temporibus fugit quos
+                        distinctio ratione tempore omnis beatae, tenetur totam, nihil, dicta dolorum obcaecati.
+                        Accusamus ullam repellendus, voluptate quas doloremque unde quasi est, incidunt quis rem, sint
+                        earum. Deserunt beatae rem a odio quisquam nisi, nostrum temporibus accusantium suscipit,
+                        eligendi, voluptates sequi?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Dicta dolorum vel non eos. Nulla rerum numquam quam eaque officiis molestias? Dolor architecto
+                        saepe nihil soluta consequuntur dolorem repudiandae ipsa voluptates! Porro illo nobis quod sit
+                        similique reprehenderit veniam unde? Excepturi sed consectetur libero quam. Adipisci
+                        exercitationem consequuntur debitis reiciendis, officiis unde quasi deserunt iure esse non
+                        mollitia. Facere?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Architecto saepe nobis cum fuga vitae totam quod deserunt sapiente quisquam neque officiis, ab
+                        tempore impedit eveniet mollitia eum quidem. Id, voluptas? Ipsam pariatur fugiat ex eveniet,
+                        maiores quos. Illo perspiciatis consequatur ratione dolores delectus molestias provident dolorum
+                        fuga quis perferendis impedit cumque tempore velit aspernatur, dicta ullam, eveniet iusto!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Porro itaque id omnis. Magni obcaecati quod minima necessitatibus? Alias dolore officia qui
+                        facilis dignissimos laudantium voluptas iusto blanditiis error temporibus dolores, reiciendis
+                        adipisci itaque. Voluptatem esse placeat nemo? Quam praesentium quisquam minus iste inventore
+                        molestiae explicabo mollitia nostrum commodi hic minima, quia sed ex, esse officia tempora.
+                        Quas, nostrum.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Numquam necessitatibus veniam, laboriosam totam error sunt nemo distinctio! Nostrum dolorem,
+                        voluptatum dolore impedit ullam ab ducimus voluptate vel ad iusto eligendi at repellat quos, ea
+                        aperiam eos ipsum velit doloribus porro voluptates! Aliquid id, asperiores fuga, at voluptatem
+                        ex quidem dignissimos vel amet dolore cupiditate temporibus natus illum porro?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Commodi animi facilis minima alias aliquam repellendus quam rem debitis. Qui doloremque sequi
+                        aliquid distinctio voluptatum, obcaecati cumque officiis quod beatae sit, quidem perspiciatis
+                        reiciendis labore sint blanditiis repudiandae harum, ipsa libero possimus quo aspernatur
+                        cupiditate! Soluta, nisi eaque earum excepturi in dolorem deserunt, placeat dolores ipsam
+                        quisquam sequi. Eum.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Fugiat id repellat porro vitae voluptate excepturi corporis soluta minus totam! Harum hic
+                        incidunt voluptates vero omnis veniam deserunt necessitatibus. Illo quam sapiente saepe dicta
+                        nemo fugiat voluptate repellat optio. Exercitationem, iure voluptatum alias vel rerum ex qui
+                        tempore provident! Dolor, temporibus quisquam? Beatae atque doloremque reprehenderit, voluptate
+                        quod rem?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Suscipit dolorum veniam minus non numquam perspiciatis saepe vel aut sint provident, maxime
+                        assumenda praesentium omnis sed, ut beatae, atque harum. Soluta alias dolorum molestias sequi.
+                        Ratione, odio porro consequatur dolor repellat, ipsa ab explicabo beatae consectetur, quas nam
+                        quod quam laboriosam nisi accusamus quae maxime distinctio itaque. Ex, facilis!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Officia, vero mollitia ad unde aliquid eos est blanditiis dignissimos assumenda, impedit autem. A
+                        soluta id nesciunt vel dignissimos facere et. Consectetur fugiat impedit beatae unde reiciendis
+                        cumque tempora nihil sunt eos, fugit facilis ipsa explicabo placeat quibusdam. Voluptatibus
+                        impedit dolorem, maxime aliquid mollitia unde tempore reprehenderit distinctio doloremque porro.
+                    </p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Nihil facere ullam, blanditiis quisquam officiis vel aperiam asperiores ipsam magni unde, placeat
+                        explicabo amet! Repellendus ipsam laborum consequatur unde natus earum corporis beatae!
+                        Aspernatur consequuntur animi itaque atque sequi quo accusamus facere provident omnis quas sint
+                        porro quibusdam praesentium deleniti hic, quia, veniam rerum quod illo, dolore sunt eos.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Doloremque repudiandae, totam voluptates nesciunt dolores aperiam dolorem nobis vitae inventore
+                        repellat aut nulla recusandae libero, quas quaerat et cupiditate sed dolor hic velit
+                        consequatur. Dolore, sapiente. Rem veritatis deserunt earum blanditiis sapiente porro voluptatum
+                        in, tempore ea voluptatibus, consequatur dolorum delectus odit, perferendis assumenda ratione.
+                        Sunt laboriosam magnam aut?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Tempora ad dolores qui at quibusdam, totam necessitatibus voluptas eius, ab veniam inventore
+                        incidunt porro suscipit alias in omnis nesciunt minima saepe repellat molestiae labore?
+                        Voluptatum quibusdam repellat enim voluptates! Fuga iure nemo, consectetur fugiat itaque
+                        deleniti in laudantium suscipit consequatur sapiente perspiciatis voluptatum blanditiis? Nam ea
+                        voluptas deleniti laborum.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Nemo illo eos laboriosam deleniti ut mollitia, illum voluptatibus aperiam, nobis corrupti
+                        similique nihil omnis quod asperiores sunt impedit sequi eaque consequuntur ab quaerat velit?
+                        Ipsam voluptates aut assumenda, vel maiores, aperiam numquam cum laudantium sint maxime velit
+                        adipisci corporis ipsum dolor, quo sed itaque pariatur ut libero ex enim.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Voluptate asperiores beatae unde similique, temporibus minus? Quod ut voluptates autem pariatur
+                        dolor laudantium numquam accusamus, quam maxime unde in quisquam ipsum illo quibusdam iure
+                        soluta! Numquam, minima. Sequi aut cumque nostrum hic facilis porro earum! Explicabo vel sit eos
+                        soluta est, magni dolorum quidem possimus voluptatem architecto laborum ex!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Provident itaque, ut quae commodi repellat nihil. Ex voluptatem error et dolor reprehenderit
+                        magnam cumque nulla mollitia quam architecto aliquam nesciunt, enim voluptatibus voluptate earum
+                        ut explicabo fugit eligendi ab nostrum. Commodi nisi odio, facere alias ratione in repellat
+                        voluptates repellendus saepe dolorem, itaque nesciunt iste placeat libero at quo?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Blanditiis unde fuga, modi mollitia provident maiores, officia itaque quasi nostrum molestiae
+                        ipsum ducimus saepe eos architecto quidem nisi, iure eius dignissimos libero cupiditate in!
+                        Aliquam iusto officia qui quibusdam laboriosam dignissimos, vero odit vel expedita omnis eos.
+                        Cupiditate dicta rem sunt in numquam labore fuga soluta dolores fugiat ducimus.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Ducimus veniam soluta, nobis ut earum commodi delectus culpa! Consectetur deleniti molestias
+                        nihil temporibus maxime animi distinctio delectus amet veritatis! Vel laboriosam labore iusto
+                        impedit necessitatibus? Facere eius eveniet ipsam, in suscipit nam alias quos? Repellendus, ut
+                        temporibus quis beatae magnam quae, assumenda accusantium, iusto possimus tenetur quaerat
+                        aliquid nesciunt.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Accusamus adipisci veniam ab molestias ipsam et quasi perspiciatis, nobis placeat! Ratione odit
+                        perferendis obcaecati inventore aliquid culpa reprehenderit. Soluta obcaecati, nesciunt cumque
+                        magni voluptate iste explicabo ea inventore, et enim animi voluptatem facere recusandae, impedit
+                        quidem odit at doloribus natus repellat fuga quisquam esse consectetur distinctio! Molestias,
+                        quibusdam deserunt!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo"><img src="images/lion.jpg" alt=""></div>
+                <div class="photo-details">
+                    <h3>Lion King Candid</h3>
+                    <p>Pariatur, fugiat. Eveniet ducimus vitae cum ad velit porro dolor rerum voluptates, minima soluta
+                        deserunt fugit pariatur, eos ut aperiam esse beatae a culpa blanditiis voluptate animi ea
+                        laboriosam magni eum. Explicabo nesciunt ex fugit dolores optio ad numquam assumenda. Itaque ab
+                        possimus, at rerum a quidem. Nesciunt, doloribus mollitia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
